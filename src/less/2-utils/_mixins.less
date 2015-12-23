@@ -1,0 +1,36 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Less mixins.
+// -----------------------------------------------------------------------------
+
+@web-font-path: "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic";
+
+.web-font(@path) {
+  @import url("@{path}");
+}
+.web-font(@web-font-path);
+
+.shadow (@width: 4px) {
+  border-width: 0 1px @width 1px;
+}
+
+.size (@width: 400, @height: 200) {
+	width: @width * 1px;
+	height: @height * 1px;
+}
+
+.square (@value: 100) {
+	.size(@value, @value);
+}
+
+.box-shadow (@string) {
+  -webkit-box-shadow: @string;
+  -moz-box-shadow:    @string;
+  box-shadow:         @string;
+}
+
+.transition (@transition) {
+  -webkit-transition: @transition;
+  -moz-transition:    @transition;
+  -ms-transition:     @transition;
+  -o-transition:      @transition;
+}
