@@ -1,6 +1,4 @@
 @charset 'UTF-8';
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic");
 /*!
  * bootswatch v3.3.6
  * Homepage: http://bootswatch.com
@@ -7348,15 +7346,6 @@ a:hover,
 a:focus {
   color: #0074d9;
 }
-header,
-.header {
-  text-align: center;
-  margin: 10px 0;
-}
-header a,
-.header a {
-  margin: 50px 0;
-}
 footer {
   height: 30px;
   padding: 40px 0;
@@ -7421,4 +7410,7 @@ input[type="button"].button-primary:focus {
   color: #FFF;
   background-color: #1EAEDB;
   border-color: #1EAEDB;
+}
+.gallery .row {
+  margin-bottom: 20px;
 }
